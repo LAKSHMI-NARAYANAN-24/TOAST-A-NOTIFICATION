@@ -1,0 +1,82 @@
+
+.container{
+    height: 40px;
+    width: 250px;
+    background: darkgray;
+    padding: 30px 30px;
+    margin: 30px 30px;
+    border-radius: 5px;
+}
+.buttonStyle{
+    height: 35px;
+    width: 70px;
+    border: none;
+    background-color: rgb(24, 7, 65);
+    font-family:monospace;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+#main{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.styleToast{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(203, 189, 216);
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+ .saved img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: green;
+}
+
+.invalid img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: red;
+}
+
+.error img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: orangered;
+}
+
+.styleToast::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    animation: anime 5s forwards;
+}
+
+@keyframes anime {
+    100%{
+        width: 0;
+    }
+}

@@ -1,0 +1,26 @@
+
+const main1=document.getElementById("main");
+
+const savedMsg='<img src="/js-projects/Toast a notifacation/images/icons8-tick-30.png" alt=""> Details are Saved';
+const invalidMsg='<img src="/js-projects/Toast a notifacation/images/icons8-cancel-30.png" alt=""> Invalid, Fill manditary details ';
+const errorMsg='<img src="/js-projects/Toast a notifacation/images/icons8-error-30.png" alt=""> Error, Check the details';
+
+function fun(msg){
+
+let toast=document.createElement("div");
+toast.classList.add("styleToast");
+toast.innerHTML=msg;
+main1.appendChild(toast);
+if (msg.includes('Saved')) {
+    toast.classList.add("saved");
+}
+if (msg.includes('manditary')) {
+    toast.classList.add("invalid");
+}
+if (msg.includes('Check')) {
+    toast.classList.add("error");
+}
+setTimeout(()=>{
+    toast.remove();
+},5000)
+}

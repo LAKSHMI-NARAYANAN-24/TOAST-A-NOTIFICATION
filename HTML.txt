@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toast.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="fun(savedMsg)" class="buttonStyle">Saved</button>
+        <button onclick="fun(invalidMsg)" class="buttonStyle">Error</button>
+        <button onclick="fun(errorMsg)" class="buttonStyle">Invalid</button>
+    </div>
+    
+    
+    <div id="main">
+        
+    </div>
+
+    <script src="toast.js"></script>
+</body>
+</html>
